@@ -13,7 +13,7 @@ dotenv.config()
 const app=express();
 app.use(express.json());
 app.use(cors({
-   origin:"https://tiptopfashion.netlify.app/",
+   origin:"7386db9d-7840-4e3f-951d-96b7fabd0988",
     credentials:true
 }));
 
