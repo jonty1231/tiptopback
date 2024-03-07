@@ -13,7 +13,7 @@ dotenv.config()
 const app=express();
 app.use(express.json());
 app.use(cors({
-   origin:"7386db9d-7840-4e3f-951d-96b7fabd0988",
+   origin:"b7134f95-cc04-4518-9e50-82abf99c4cb1",
     credentials:true
 }));
 
