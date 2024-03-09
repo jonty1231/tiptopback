@@ -19,7 +19,7 @@ app.use(cors({
 
 
 app.use(cookiparser());
-app.use("/",(req,res)=>{res.send("go")}
+app.use("/",(req,res)=>{res.send("go")})
 
 app.use('/',ownerroute)
 app.use("/",productroute)
