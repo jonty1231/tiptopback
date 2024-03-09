@@ -12,10 +12,7 @@ dotenv.config()
 
 const app=express();
 app.use(express.json());
-app.use(cors({
-   origin:"b7134f95-cc04-4518-9e50-82abf99c4cb1",
-    credentials:true
-}));
+
 
 
 app.use(cookiparser());
