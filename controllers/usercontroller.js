@@ -143,7 +143,7 @@ export const getuser =async(req,res)=>{
     try {
         const user=req.user;
         if(!user){
-           return res.status(404).json( {
+           return res.status(200).json( {
                 success:false,
                 message:"user not found"
             })}
@@ -186,7 +186,7 @@ export const addcart=async(req,res)=>{
          const {_id}=req.user;
         
       if(!productid || !_id){
-     return   res.status(404).json({
+     return   res.status(200).json({
             success:false,
             message:"failed"
         })}
