@@ -16,7 +16,7 @@ app.use(express.json());
 
 
 app.use(cookiparser());
-app.use("/",(req,res)=>{res.json({go:"go"})})
+app.get("/",(req,res)=>{res.json({go:"go"})})
 
 app.use('/',ownerroute)
 app.use("/",productroute)
