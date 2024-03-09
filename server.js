@@ -19,7 +19,6 @@ app.use(cors({
 
 
 app.use(cookiparser());
-app.use("/",(req,res)=>{res.send("done site")})
 app.use('/',ownerroute)
 app.use("/",productroute)
 app.use("/user",userrouter)
@@ -27,7 +26,8 @@ app.use("/user",userrouter)
 
 
  const PORT=process.env.PORT || 8000
-
+app.use("/",(req,res)=>{res.json({PORT})
+ 
  mongoose
  .connect(process.env.MONGO_URI)
  .then(()=>{
